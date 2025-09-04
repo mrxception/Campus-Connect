@@ -104,7 +104,7 @@ export default function Login() {
                         </div>
 
                         <div className="flex justify-evenly w-full gap-x-2">
-                            <Button className="flex-grow cursor-pointer" variant="outline" size="lg">
+                            <Button className="w-1/2 cursor-pointer" variant="outline" size="lg">
                                 <Image
                                     src="/Google.png"
                                     alt="Google"
@@ -113,7 +113,7 @@ export default function Login() {
                                 />
                                 <span className="ml-2">Google</span>
                             </Button>
-                            <Button className="flex-grow cursor-pointer" variant="outline" size="lg">
+                            <Button className="w-1/2 cursor-pointer" variant="outline" size="lg">
                                 <Image
                                     src="/Facebook.png"
                                     alt="Facebook"
