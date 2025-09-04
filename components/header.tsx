@@ -12,7 +12,7 @@ export default function Header() {
     <header className="sticky top-0 bg-white z-10 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] py-2 px-4 sm:px-6 lg:px-8 border-b">
       <div className="mx-auto max-w-7xl flex justify-between items-center">
         <div className="flex justify-center items-center space-x-2">
-          <Image src="/logo.png" alt="Campus Connect" width={40} height={40} />
+          <Image src="/Hat.png" alt="Campus Connect" width={40} height={40} />
           <div className="flex flex-col justify-center">
             <span className="text-[#1E293B] font-bold">Campus Connect</span>
             <span className="text-xs text-[#8B1538] font-semibold">Student Community</span>
