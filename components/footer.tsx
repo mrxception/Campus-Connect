@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative bottom-0 z-0 border-t border-[#E2E8F0] bg-white text-center text-sm text-gray-500 py-4 px-4 sm:px-6 lg:px-8">
+    <footer className="relative bottom-0 left-0 right-0 z-10 border-t border-[#E2E8F0] bg-white text-center text-sm text-gray-500 py-4 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
         <span className="text-[#64748B] text-center sm:text-left">
           © 2025 Campus Connect. A student community initiative.

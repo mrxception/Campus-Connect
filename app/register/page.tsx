@@ -4,7 +4,7 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Login() {
+export default function Register() {
     const desc = [
         "Share posts about campus life, events, and experiences",
         "Connect and chat with fellow students from your campus",
@@ -69,11 +69,16 @@ export default function Login() {
                 </div>
 
                 <div className="flex items-center justify-center bg-white">
-                    <div className="flex gap-y-6 flex-col justify-center items-center min-h-[calc(100vh-8rem)] px-6 mx-auto w-full">
-                        <h1 className="text-3xl font-bold mb-5">Welcome back to Campus Connect</h1>
+                    <div className="flex flex-col justify-center items-center min-h-[calc(100vh-8rem)] px-6 mx-auto w-full">
+                        <h1 className="text-3xl font-bold mb-5">Welcome to Campus Connect</h1>
 
                         <div className="flex flex-col items-center gap-y-6 w-full lg:w-[calc(100vh-30rem)]">
                             <div className="flex flex-col gap-y-4 w-full">
+                                <div className="flex flex-col gap-y-2">
+                                    <Label className="text-xs text-[#374151]" htmlFor="name">Full name</Label>
+                                    <Input required type="text" id="name" placeholder="Enter your full name" className="w-full" />
+                                </div>
+
                                 <div className="flex flex-col gap-y-2">
                                     <Label className="text-xs text-[#374151]" htmlFor="email">Student email</Label>
                                     <Input required type="text" id="email" placeholder="Enter your student email" className="w-full" />
@@ -83,24 +88,16 @@ export default function Login() {
                                     <Label className="text-xs text-[#374151]" htmlFor="email">Password</Label>
                                     <Input required type="password" id="password" placeholder="Enter your password" className="w-full" />
                                 </div>
-                            </div>
 
-
-                            <div className="flex justify-between w-full">
-                                <div className="flex flex-row space-x-2">
-                                    <Input type="checkbox" id="remember" className="w-4 h-4" />
-                                    <Label className="text-xs text-[#64748B]" htmlFor="remember">Remember me</Label>
-                                </div>
-                                <Link className="text-xs text-[#8B1538] font-medium" href="/#">Forgot password?</Link>
                             </div>
 
                             <Button size="lg" className="w-full bg-gradient-to-r from-[#8B1538] to-[#6B1028] hover:brightness-110 text-white font-medium cursor-pointer rounded transition duration-300">
-                                Sign In
+                                Sign Up
                             </Button>
 
                             <div className="flex justify-center items-center space-x-2 w-full">
                                 <hr className="flex-grow border-t border-[#E2E8F0] h-px" />
-                                <span className="text-xs text-[#64748B] font-medium">Or sign in with</span>
+                                <span className="text-xs text-[#64748B] font-medium">Or continue with</span>
                                 <hr className="flex-grow border-t border-[#E2E8F0] h-px" />
                             </div>
 
@@ -125,7 +122,7 @@ export default function Login() {
                                 </Button>
                             </div>
 
-                            <span className="text-xs">New to Campus? <Link className="text-[#8B1538] font-medium" href="/register">Create an account</Link></span>
+                            <span className="text-xs">Already have an account? <Link className="text-[#8B1538] font-medium" href="/login">Sign In</Link></span>
                         </div>
 
                     </div>
